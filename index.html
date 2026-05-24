@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kashish Gupta | Portfolio</title>
     <style>
-        /* --- Modern Light Professional Design Tokens --- */
+        /* --- Pastel Light Pink & Yellow Design Tokens --- */
         :root {
-            --bg-main: #f8fafc;          /* Crisp light gray/blue background */
-            --bg-card: #ffffff;          /* Pure white card */
-            --bg-tag: #f1f5f9;           /* Soft light gray for tags */
-            --primary-accent: #2563eb;   /* Professional Royal Blue */
-            --secondary-accent: #0f172a; /* Sophisticated Deep Slate */
-            --text-main: #0f172a;        /* Dark slate body text */
-            --text-muted: #475569;       /* Slate gray for secondary text */
-            --border-muted: #e2e8f0;     /* Soft clean border light gray */
+            --bg-main: #fffbeb;          /* Soft light cream-yellow background */
+            --bg-card: #ffffff;          /* Pure white main card container */
+            --bg-tag: #fce7f3;           /* Lovely pastel light pink for tags */
+            --primary-accent: #ec4899;   /* Vibrant light pink for primary highlights */
+            --secondary-accent: #d97706; /* Warm golden amber/yellow for subtitles and depth */
+            --text-main: #374151;        /* Clean dark charcoal for easy reading */
+            --text-muted: #6b7280;       /* Balanced gray for secondary text */
+            --border-muted: #fef08a;     /* Delicate pastel light yellow for borders */
             --max-width: 1000px;
         }
 
@@ -37,7 +37,7 @@
         nav {
             position: sticky;
             top: 0;
-            background-color: rgba(248, 250, 252, 0.85);
+            background-color: rgba(255, 251, 235, 0.9); /* Warm translucent yellow cream */
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border-muted);
@@ -82,14 +82,14 @@
         }
 
         .nav-links button:hover {
-            color: var(--text-main);
-            background-color: var(--bg-tag);
+            color: var(--primary-accent);
+            background-color: #fdf2f8; /* Softest pink on hover */
         }
 
         .nav-links button.active {
             color: #ffffff;
             background-color: var(--primary-accent);
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+            box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
         }
 
         /* --- Main Layout Frame --- */
@@ -100,7 +100,7 @@
             padding: 4rem;
             border-radius: 16px;
             border: 1px solid var(--border-muted);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.04), 0 8px 10px -6px rgba(217, 119, 6, 0.04);
         }
 
         /* --- Header / Bio Block --- */
@@ -120,14 +120,14 @@
             font-weight: 800;
             letter-spacing: -0.05em;
             line-height: 1;
-            color: var(--secondary-accent);
+            color: var(--primary-accent);
         }
 
         .header-title .subtitle {
             font-size: 1.2rem;
-            color: var(--primary-accent);
+            color: var(--secondary-accent);
             margin-top: 0.75rem;
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: -0.01em;
         }
 
@@ -191,7 +191,7 @@
         }
 
         .resume-item {
-            background-color: rgba(15, 23, 42, 0.01);
+            background-color: rgba(254, 240, 138, 0.1); /* Very subtle light yellow tint */
             border: 1px solid var(--border-muted);
             padding: 1.75rem;
             border-radius: 10px;
@@ -201,8 +201,8 @@
 
         .resume-item:hover {
             transform: translateY(-2px);
-            border-color: rgba(37, 99, 235, 0.3);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            border-color: var(--primary-accent);
+            box-shadow: 0 4px 12px rgba(236, 72, 153, 0.05);
         }
 
         .resume-item:last-child {
@@ -221,7 +221,7 @@
         .item-title {
             font-weight: 700;
             font-size: 1.2rem;
-            color: var(--secondary-accent);
+            color: var(--text-main);
         }
 
         .item-company {
@@ -243,10 +243,10 @@
         }
 
         .item-date {
-            color: var(--text-muted);
+            color: var(--text-main);
             font-size: 0.85rem;
             font-weight: 600;
-            background-color: var(--bg-tag);
+            background-color: #fef9c3; /* Light pastel yellow badge */
             padding: 0.25rem 0.6rem;
             border-radius: 4px;
             border: 1px solid var(--border-muted);
@@ -314,13 +314,13 @@
             border-radius: 6px;
             font-size: 0.85rem;
             font-weight: 600;
-            border: 1px solid var(--border-muted);
+            border: 1px solid #fbcfe8; /* Softer pink border */
             transition: all 0.2s;
         }
 
         .skill-tag:hover {
             border-color: var(--primary-accent);
-            background-color: rgba(37, 99, 235, 0.05);
+            background-color: #fae8ff;
             color: var(--primary-accent);
         }
 
@@ -334,7 +334,7 @@
 
         .contact-details h3 {
             font-size: 1.2rem;
-            color: var(--secondary-accent);
+            color: var(--text-main);
             margin-bottom: 1rem;
         }
 
@@ -353,7 +353,7 @@
             align-items: center;
             gap: 1rem;
             padding: 1rem;
-            background-color: var(--bg-tag);
+            background-color: #fffbeb; /* Soft light yellow frame */
             border: 1px solid var(--border-muted);
             border-radius: 8px;
         }
@@ -373,8 +373,8 @@
             display: flex;
             flex-direction: column;
             gap: 1.25rem;
-            background-color: rgba(15, 23, 42, 0.01);
-            border: 1px solid var(--border-muted);
+            background-color: rgba(252, 231, 243, 0.2); /* Very soft subtle pink wash */
+            border: 1px solid #fbcfe8;
             padding: 2rem;
             border-radius: 10px;
         }
@@ -390,7 +390,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            color: var(--secondary-accent);
+            color: var(--text-muted);
         }
 
         .form-group input, .form-group textarea {
@@ -407,7 +407,7 @@
         .form-group input:focus, .form-group textarea:focus {
             outline: none;
             border-color: var(--primary-accent);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+            box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.15);
         }
 
         .submit-btn {
@@ -425,7 +425,7 @@
         }
 
         .submit-btn:hover {
-            background-color: #1d4ed8;
+            background-color: #db2777;
         }
 
         .submit-btn:active {
@@ -675,14 +675,14 @@
                             <div class="contact-method-item">
                                 <span class="icon">📧</span>
                                 <div>
-                                    <p style="font-size: 0.8rem; font-weight: 700; color: var(--secondary-accent);">EMAIL</p>
+                                    <p style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">EMAIL</p>
                                     <a href="mailto:333kashishh@gmail.com">333kashishh@gmail.com</a>
                                 </div>
                             </div>
                             <div class="contact-method-item">
                                 <span class="icon">💼</span>
                                 <div>
-                                    <p style="font-size: 0.8rem; font-weight: 700; color: var(--secondary-accent);">LINKEDIN</p>
+                                    <p style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">LINKEDIN</p>
                                     <a href="https://www.linkedin.com/in/kashish-gupta-05b15a324/" target="_blank">Connect with me ↗</a>
                                 </div>
                             </div>
